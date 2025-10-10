@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Gift, Star } from "lucide-react";
-
 const CTA = () => {
-  return (
-    <section className="py-24 bg-gradient-warm text-white">
+  return <section className="py-24 bg-gradient-warm text-white">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
@@ -34,19 +32,10 @@ const CTA = () => {
 
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-medium"
-              >
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-medium">
                 Escolher Kit Perfeito
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg"
-              >
-                Criar Kit Personalizado
-              </Button>
+              
             </div>
             
             <div className="text-sm opacity-80">
@@ -78,8 +67,6 @@ const CTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTA;
