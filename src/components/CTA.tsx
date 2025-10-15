@@ -6,12 +6,10 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
             <h2 className="text-4xl lg:text-5xl font-light leading-tight">
-              Desperte os Sentidos do
-              <span className="block font-normal">Seu Pai Neste Dia Especial</span>
+              <span className="block font-normal">Desperte os seus Sentidos</span>
             </h2>
             <p className="text-xl opacity-90 leading-relaxed">
-              Um presente que vai além do material. Uma experiência que conecta, 
-              emociona e cria memórias inesquecíveis.
+              Uma experiência que vai além do material: conecta e cria memórias inesquecíveis
             </p>
           </div>
 
@@ -32,10 +30,11 @@ const CTA = () => {
 
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-medium">
-                Escolher Kit Perfeito
-              </Button>
-              
+              <a href="#kits">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-4 text-lg font-medium">
+                  Escolher Kit Perfeito
+                </Button>
+              </a>
             </div>
             
             <div className="text-sm opacity-80">

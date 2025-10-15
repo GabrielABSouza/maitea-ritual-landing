@@ -13,7 +13,7 @@ const ProductCategories = () => {
       icon: Leaf,
       title: "Cosméticos Naturais",
       description: "Produtos orgânicos que cuidam da pele com ingredientes puros da natureza.",
-      features: ["100% naturais", "Livres de químicos", "Testados dermatologicamente"]
+      features: ["100% naturais", "Livres de crueldade animal", "Testados dermatologicamente"]
     },
     {
       icon: Sparkles,

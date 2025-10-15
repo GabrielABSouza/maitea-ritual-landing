@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Cart from "@/components/Cart";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,19 +35,24 @@ const Header = () => {
             </a>
           </nav>
 
-          <div className="hidden md:block">
-            <Button variant="default" className="bg-primary hover:bg-primary/90">
-              Comprar Agora
-            </Button>
+          <div className="hidden md:flex items-center gap-4">
+            <a href="#kits">
+              <Button variant="default" className="bg-primary hover:bg-primary/90">
+                Comprar Agora
+              </Button>
+            </a>
+            <Cart />
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <Cart />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -65,9 +71,11 @@ const Header = () => {
               <a href="#contato" className="text-foreground hover:text-primary transition-colors">
                 Contato
               </a>
-              <Button variant="default" className="bg-primary hover:bg-primary/90 w-full mt-4">
-                Comprar Agora
-              </Button>
+              <a href="#kits">
+                <Button variant="default" className="bg-primary hover:bg-primary/90 w-full mt-4">
+                  Comprar Agora
+                </Button>
+              </a>
             </div>
           </nav>
         )}

@@ -7,11 +7,11 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-light leading-tight text-foreground">
-                Rituais especiais para o
-                <span className="block text-primary font-normal">Dia dos Pais</span>
+                Rituais especiais para seus
+                <span className="block text-primary font-normal">momentos de auto-cuidado</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Desperte os sentidos do seu pai com kits únicos que combinam 
+                Desperte seus sentidos com kits únicos que combinam 
                 cosméticos naturais, cafés especiais, chás aromáticos e experiências sensoriais inesquecíveis.
               </p>
             </div>
