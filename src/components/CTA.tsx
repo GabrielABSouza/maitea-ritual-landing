@@ -39,30 +39,18 @@ const CTA = () => {
             </div>
             
             <div className="text-sm opacity-80">
-              <p>🚚 Entrega gratuita para todo o Brasil • 💝 Embalagem presente inclusa</p>
+              
             </div>
           </div>
 
           <div className="pt-8 border-t border-white/20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
               <div>
-                <div className="font-medium mb-2">Entrega Rápida</div>
-                <div className="opacity-80">
-                  Receba em até 3 dias úteis em todo o Brasil
-                </div>
+                
+                
               </div>
-              <div>
-                <div className="font-medium mb-2">Garantia de Qualidade</div>
-                <div className="opacity-80">
-                  100% de satisfação ou seu dinheiro de volta
-                </div>
-              </div>
-              <div>
-                <div className="font-medium mb-2">Suporte Especializado</div>
-                <div className="opacity-80">
-                  Nossa equipe te ajuda a escolher o kit ideal
-                </div>
-              </div>
+              
+              
             </div>
           </div>
         </div>
