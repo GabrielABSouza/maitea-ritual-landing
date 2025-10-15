@@ -3,36 +3,43 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import ritualProducts from "@/assets/ritual-products.jpg";
 import handsGift from "@/assets/hands-gift.jpg";
+
 const FeaturedKits = () => {
-  const kits = [{
-    id: 1,
-    name: "Kit Força & Energia",
-    subtitle: "Para pais que inspiram",
-    description: "Café especial torrado artesanalmente, cosmético natural energizante, chá revigorante e texto personalizado sobre força paterna.",
-    price: "R$ 189,90",
-    image: ritualProducts,
-    badge: "Mais Vendido",
-    features: ["Café Premium", "Cosmético Natural", "Chá Energizante", "Texto Personalizado"]
-  }, {
-    id: 2,
-    name: "Kit Serenidade",
-    subtitle: "Para momentos de calma",
-    description: "Aromas relaxantes, chá calmante, cosmético hidratante e experiência completa de bem-estar para pausas especiais.",
-    price: "R$ 159,90",
-    image: handsGift,
-    badge: "Edição Limitada",
-    features: ["Aromas Relaxantes", "Chá Calmante", "Hidratante Natural", "Guia de Rituais"]
-  }, {
-    id: 3,
-    name: "Kit Aventureiro",
-    subtitle: "Para pais exploradores",
-    description: "Cosméticos naturais para a pele, café especial, energético natural e produtos para quem ama aventuras.",
-    price: "R$ 219,90",
-    image: ritualProducts,
-    badge: "Novidade",
-    features: ["Protetor Natural", "Café Intenso", "Energético Natural", "Kit Viagem"]
-  }];
-  return <section id="kits" className="py-24 bg-background">
+  const kits = [
+    {
+      id: 1,
+      name: "Kit Força & Energia",
+      subtitle: "Para pais que inspiram",
+      description: "Café especial torrado artesanalmente, cosmético natural energizante, chá revigorante e texto personalizado sobre força paterna.",
+      price: "R$ 189,90",
+      image: ritualProducts,
+      badge: "Mais Vendido",
+      features: ["Café Premium", "Cosmético Natural", "Chá Energizante", "Texto Personalizado"]
+    },
+    {
+      id: 2,
+      name: "Kit Serenidade",
+      subtitle: "Para momentos de calma",
+      description: "Aromas relaxantes, chá calmante, cosmético hidratante e experiência completa de bem-estar para pausas especiais.",
+      price: "R$ 159,90",
+      image: handsGift,
+      badge: "Edição Limitada",
+      features: ["Aromas Relaxantes", "Chá Calmante", "Hidratante Natural", "Guia de Rituais"]
+    },
+    {
+      id: 3,
+      name: "Kit Aventureiro",
+      subtitle: "Para pais exploradores",
+      description: "Cosméticos naturais para a pele, café especial, energético natural e produtos para quem ama aventuras.",
+      price: "R$ 219,90",
+      image: ritualProducts,
+      badge: "Novidade",
+      features: ["Protetor Natural", "Café Intenso", "Energético Natural", "Kit Viagem"]
+    }
+  ];
+
+  return (
+    <section id="kits" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-foreground mb-4">
@@ -46,9 +53,14 @@ const FeaturedKits = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {kits.map(kit => <Card key={kit.id} className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30">
+          {kits.map((kit) => (
+            <Card key={kit.id} className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30">
               <div className="relative overflow-hidden rounded-t-lg">
-                <img src={kit.image} alt={kit.name} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img 
+                  src={kit.image} 
+                  alt={kit.name}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
                 <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
                   {kit.badge}
                 </Badge>
@@ -69,9 +81,11 @@ const FeaturedKits = () => {
                 <div className="space-y-2">
                   <div className="text-sm font-medium text-foreground">Inclui:</div>
                   <div className="flex flex-wrap gap-2">
-                    {kit.features.map((feature, index) => <Badge key={index} variant="secondary" className="text-xs">
+                    {kit.features.map((feature, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs">
                         {feature}
-                      </Badge>)}
+                      </Badge>
+                    ))}
                   </div>
                 </div>
                 
@@ -84,13 +98,22 @@ const FeaturedKits = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
 
         <div className="text-center mt-16">
-          
+          <Button 
+            size="lg" 
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4"
+          >
+            Ver Todos os Kits
+          </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default FeaturedKits;
