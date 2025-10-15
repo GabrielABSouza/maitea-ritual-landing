@@ -4,6 +4,7 @@ import FeaturedKits from "@/components/FeaturedKits";
 import ProductCategories from "@/components/ProductCategories";
 import About from "@/components/About";
 import CTA from "@/components/CTA";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
       <ProductCategories />
       <About />
       <CTA />
+      <Contact />
       <Footer />
     </div>
   );
