@@ -7,11 +7,12 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-light leading-tight text-foreground">
-                Rituais especiais para seus
-                <span className="block text-primary font-normal">momentos de auto-cuidado</span>
+                Rituais especiais para o
+                <span className="block text-primary font-normal">    momentos de
+            auto-cuidado</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Desperte seus sentidos com kits únicos que combinam 
+                Desperte os sentidos do seu pai com kits únicos que combinam 
                 cosméticos naturais, cafés especiais, chás aromáticos e experiências sensoriais inesquecíveis.
               </p>
             </div>
@@ -24,14 +25,8 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center space-x-8 pt-4">
-              <div className="text-center">
-                <div className="text-2xl font-semibold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Produtos Naturais</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-semibold text-primary">100%</div>
-                <div className="text-sm text-muted-foreground">Orgânicos</div>
-              </div>
+              
+              
               <div className="text-center">
                 <div className="text-2xl font-semibold text-primary">✨</div>
                 <div className="text-sm text-muted-foreground">Experiência Única</div>
